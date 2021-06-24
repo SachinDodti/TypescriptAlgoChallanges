@@ -1,13 +1,12 @@
-function allLongestString(inputArary : string[]) : any{
+function allLongestString(inputArray : string[]) : any{
 
  let longestLength = 0;
  let arrLength=[];
-  inputArary.forEach((word:string) => {
+  inputArray.forEach((word:string) => {
     longestLength =  word.length > longestLength ? word.length:longestLength
     } )
-̦
 
- inputArary.forEach((word:string) =>{
+ inputArray.forEach((word:string) =>{
      if(longestLength == word.length){
         arrLength.push(word)
      }
@@ -21,4 +20,3 @@ function allLongestString(inputArary : string[]) : any{
 console.log(allLongestString(["aba", "aa", "ad", "vcd", "aba"]))
 
 
-//["aba", "vcd", "aba"]
